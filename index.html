@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supervisor Assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="assets/deepocean-logo.jpg" alt="DeepOcean Logo" class="logo">
+  <h1>Project Based Assessment Form</h1>
+</header>
+
+<main>
+  <form id="assessmentForm">
+
+    <!-- ✅ BASIC INFO -->
+    <input type="text" id="job" placeholder="Job No" required>
+    <input type="text" id="name" placeholder="Employee Name" required>
+    <input type="text" id="position" placeholder="Position" required>
+    <input type="text" id="supervisor" placeholder="Supervisor Name" required>
+
+    <h3 class="header-with-info"></h3>
+      PART I: PERFORMANCE SCORE (1–6)
+      <span class="info-icon" tabindex="5">ⓘ
+        <span class="tooltip-text">
+        Rate performance score from 1 (very poor) to 6 (excellent).
+      </span>
+    </span>
+  </label>
+
+    <!-- ✅ SCORES (WAJIB ADA name) -->
+    <input type="number" id="attendance" name="attendance" min="1" max="6" placeholder="Attendance" required>
+    <input type="number" id="punctuality" name="punctuality" min="1" max="6" placeholder="Punctuality" required>
+    <input type="number" id="attitude" name="attitude" min="1" max="6" placeholder="Attitude" required>
+    <input type="number" id="technical" name="technical" min="1" max="6" placeholder="Technical Skills" required>
+    <input type="number" id="communication" name="communication" min="1" max="6" placeholder="Communication Skills" required>
+
+    <h4 class="header-with-info"></h4>
+      PART II: RECOMMENDATION
+      <span class="info-icon" tabindex="5">ⓘ
+        <span class="tooltip-text">
+        Provide detailed feedback on strengths, areas for improvement, and overall recommendation.
+        </span>
+    </span>
+  </label>
+ 
+    <!-- ✅ TEXTAREA (WAJIB ADA name) -->
+    <textarea id="strengths" name="strengths" placeholder="Strengths" required></textarea>
+    <textarea id="improvement" name="improvement" placeholder="Improvement Areas" required></textarea>
+    <textarea id="recommendation" name="recommendation" placeholder="Recommendation" required></textarea>
+
+    <button type="submit">Submit Assessment</button>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
